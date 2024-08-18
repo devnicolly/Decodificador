@@ -4,7 +4,7 @@ const mensagem = document.querySelector(".output-text");
 
 function validarTextoECriptografar(){
 	let texto = textArea.value.trim();
-	let regex = /[A-ZÀ-Ýà-ÿ]/u;
+	let regex = /[A-ZÁ-Úá-úÀ-ÿ^a-z0-9]/g;
 	let alerta = document.getElementById("mensagemAlerta");
 	let imagem = document.getElementById("gatinho");
 
